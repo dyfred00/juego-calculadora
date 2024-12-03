@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<div class="menu">
+        <h1></h1>
+</div>
+        <div class="container central"> 
+        
+                <div class="game-container">
+                        <h1>Juego de Adivinar el Número</h1>
+                        <p>Estoy pensando en un número entre 1 y 100. ¿Cuál es?</p>
+                        <div class="input-section">
+                          <input type="number" id="guess" placeholder="Ingresa tu número" >
+                          <button id="checkBtn">Comprobar</button>
+                        </div>
+                        <p id="feedback"></p>
+                        <button id="resetBtn" style="display: none;">Reiniciar Juego</button>
+                </div>
+            </div>
+<div class="menu">
+        <h1>Calculadora estandar</h1>
+</div>
+    <div class="container central">
+            
+            <form name="f1"><br>
+                <div class="resultado">
+                        <input type="text" name="txtcaja1">
+                        <input type="text" name="txtcaja2" value="0">
+                </div>
+                <div class="contenido">
+
+                        <input type="button" class="clear" onClick="document.f1.txtcaja2.value='0'" value="CE">
+                        <input type="button" class="clear" onClick="document.f1.reset(); blocdel = false;" value="C">
+                        <input type="button" class="clear" onClick="deletecarac()" value="◄">
+                         
+                        <input type="button" class="arit" onClick="arit('/')" value="÷">
+                        <input type="button" onclick="escribir(this.value)" value="7">
+                        <input type="button" onclick="escribir(this.value)" value="8">
+                        <input type="button" onclick="escribir(this.value)" value="9">
+                        <input type="button" class="arit" onClick="arit('*')" value="×">
+
+                        <input type="button" onclick="escribir(this.value)" value="4">
+                        <input type="button" onclick="escribir(this.value)" value="5">
+                        <input type="button" onclick="escribir(this.value)" value="6">
+                        <input type="button" class="arit" onClick="arit('-')" value="-">
+                        
+                        <input type="button" onclick="escribir(this.value)" value="1">
+                        <input type="button" onclick="escribir(this.value)" value="2">
+                        <input type="button" onclick="escribir(this.value)" value="3">
+                        <input type="button" class="arit" onClick="arit('+')" value="+">
+                        
+                        <input type="button" class="arit" onClick="masmenos()" value="±">
+                        <input type="button" onclick="escribir(this.value)" value="0">
+                        <input type="button" onClick="escribir('.')" value=".">
+                        <input type="button" class="igual" onClick="calcular()" value="=">
+                        
+                </div>
+            
+            </form>
+    </div>
+    <script src="cd.js"></script>
+</body>
+</html>

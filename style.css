@@ -1,0 +1,90 @@
+body{
+    background-color:#f1f1f1;
+}
+
+.resultado{
+    border: 1px solid;
+    width: 30%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    
+}
+.contenido{
+ width: 30%;
+ height: auto;
+ background-color: black;
+ margin: auto;
+ height: auto;
+}
+.nput-section, .central{
+    display: grid;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 25px 25px 25px 25px;
+    -moz-border-radius: 25px 25px 25px 25px;
+    -webkit-border-radius: 25px 25px 25px 25px;
+    border: 0px solid #000000;
+        -webkit-box-shadow: 14px 11px 28px -6px teal;
+    -moz-box-shadow: 14px 11px 28px -6px teal;
+    box-shadow: 14px 11px 28px -6px teal;
+}
+.menu{
+    background-color: teal;
+    border-bottom: 4px solid black;
+    text-align: center;
+    color: white;
+}
+
+input[type="button"]:hover{
+    background-color:grey;
+    cursor: pointer;
+}
+input[type="button"].arit{
+    background-color:grey;
+}
+input[type="button"].igual{
+    background-color:grey;
+}
+input[type="button"].clear{
+    background-color:grey;
+}
+form{
+    background-color:white;
+}
+input[type="text"]{
+    background-color:white;
+    border:0px;
+    width:250px;
+    height: 40px;
+    font-size: 20px;
+    color: black;
+    text-align: right;
+    pointer-events: none;
+}
+input[name="txtcaja1"]{
+    height: 20px;
+    font-size: 16px;
+}
+input[name="txtcaja2"]{
+    margin-bottom: 5px;
+    font-size: 26px;
+}
+input[type="button"]{
+    font-size: 18px;
+    font-weight:lighter;
+    font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+    width:60px;
+    border:0px;
+    height: 60px;
+    color: white;
+    background-color:teal;
+    margin-bottom: 5px;
+    }
+
+
+    /**/
+
+    
